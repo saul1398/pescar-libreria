@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,800;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.colores {
+    color: #07020D;
+    color: #FFFFFF;
+    color: #F1E9DB;
+    color: #5DB7DE;
+    color: #A39B8B;
+    color: #716A5C;
+}
+
+body{
+   
+    text-align: center;
+    color: black;
+    margin: 0;
+  
+}
+*{
+    text-decoration: none;
+    outline: none;
+}
+ul{
+  
+    list-style: none;
+    padding: 0;
+}
+li{
+   background-color: #5DB7DE;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+   list-style: none;
+}
+
+
+header{
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+h1{
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+}
+h2{
+    font-weight: 400;
+    font-size: 26px;
+}
+h3{
+    font-weight: 400;
+    font-size: 22px;
+}
+article{
+    background-color: rgb(143, 151, 25);
+    margin: 30px;
+}
+
+
+header a{
+    font-family: 'Times New Roman', Times, serif
+}
+.linknav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+main{
+    margin-top: 60px;
+}
+footer{
+ background-color: #716A5C;
+ color: #F1E9DB;
+ padding: 90px;
+        
+}
+.link li{
+    display: block;/*opcional */
+}
+a:link {  /*modifica al link en reposo*/
+    color: #F1E9DB;
+    display: inline-block;
+    padding: 16px;
+    margin: 0 15px;
+    border: 3px cadetblue solid;
+    border-radius: 8px;
+
+}
+a:visited { /*al link si sfue visitado o no */
+    color: #F1E9DB;
+    display: inline-block;
+    padding: 16px;
+    margin: 0 15px;
+    border: 3px cadetblue solid;
+    border-radius: 8px;
+    
+}
+a:hover{
+    color: rgb(36, 172, 182);
+}
+
+a:active{ /*dando  click*/
+     color: red;
+}
