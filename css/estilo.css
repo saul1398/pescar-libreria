@@ -1,31 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,800;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.colores {
-    color: #07020D;
-    color: #FFFFFF;
-    color: #F1E9DB;
-    color: #5DB7DE;
-    color: #A39B8B;
-    color: #716A5C;
+
+:root{
+   --color-del-texto:black;
+   --font-size: 24px;
+   --font-de-articulos: 5px solid #5DB7DE;
+   --color-texto: #07020D;
+   --color-blanco: #FFFFFF;
+   --color-fondo: #F1E9DB;
+   --color-acento: #5DB7DE;
+   --color: #A39B8B;
+  --color: #716A5C;
+
+}
+*{
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', Times, serif;
 }
 
 body{
    
     text-align: center;
-    color: black;
+    color:var(--color-del-texto);
     margin: 0;
   
 }
-*{
-    text-decoration: none;
-    outline: none;
-}
+/*estilo general*/
+
+
 ul{
   
     list-style: none;
     padding: 0;
 }
 li{
-   background-color: #5DB7DE;
+  
     display: inline-block;
     padding: 10px;
     margin: 10px;
@@ -37,6 +46,10 @@ header{
     background-color: black;
     padding: 30px;
     margin-bottom: 50px;
+}
+a:link{
+    font-size: var(--font-size);
+    
 }
 h1{
     font-weight: 400;
@@ -50,9 +63,10 @@ h2{
 h3{
     font-weight: 400;
     font-size: 22px;
+    padding: 0px;
 }
 article{
-    background-color: rgb(143, 151, 25);
+    
     margin: 30px;
 }
 
@@ -72,31 +86,19 @@ footer{
  padding: 90px;
         
 }
-.link li{
-    display: block;/*opcional */
-}
-a:link {  /*modifica al link en reposo*/
-    color: #F1E9DB;
+
+a.nav:link ,a.nav:visited {  /*modifica al link en reposo*/
+    color: #dbe3f1;
     display: inline-block;
     padding: 16px;
     margin: 0 15px;
-    border: 3px cadetblue solid;
+    border: 3px #dbe3f1 solid;
     border-radius: 8px;
 
 }
-a:visited { /*al link si sfue visitado o no */
-    color: #F1E9DB;
-    display: inline-block;
-    padding: 16px;
-    margin: 0 15px;
+a.nav:hover, a.nav:active{
+    color: cadetblue;
     border: 3px cadetblue solid;
-    border-radius: 8px;
     
-}
-a:hover{
-    color: rgb(36, 172, 182);
-}
 
-a:active{ /*dando  click*/
-     color: red;
 }
